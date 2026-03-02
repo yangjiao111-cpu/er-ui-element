@@ -8,7 +8,8 @@
     "docs:dev": "pnpm --filter @v-element/docs dev",
     "docs:build": "pnpm --filter @v-element/docs build",
     "docs:preview": "pnpm --filter @v-element/docs preview",
-    "test": "echo 'todo'"
+    "test": "echo 'todo'",
+    "build-hooks": "echo 'Building hooks...'"
   },
   "keywords": [],
   "author": "",
