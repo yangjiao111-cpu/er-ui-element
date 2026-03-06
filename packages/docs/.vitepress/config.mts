@@ -1,10 +1,16 @@
 import { defineConfig } from 'vitepress'
+import {
+  containerPreview,
+  componentPreview,
+} from "@vitepress-demo-preview/plugin";
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "V-Element",
+  title: "Er-UI-Element",
   description: "高 仿 ElementPlus 组 件 库",
-  base: "/v-element/",
+  base: "/er-ui-element/",
+  appearance: false,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -23,7 +29,13 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/yangjiao111-cpu/er-ui-element' }
     ]
-  }
+  },
+  markdown: {
+    config(md) {
+      md.use(containerPreview);
+      md.use(componentPreview);
+    },
+  },
 })

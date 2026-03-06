@@ -2,6 +2,7 @@
   "name": "@er-ui-element/docs",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,5 +16,9 @@
   "packageManager": "pnpm@10.30.3",
   "devDependencies": {
     "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "@vitepress-demo-preview/component": "^2.6.2",
+    "@vitepress-demo-preview/plugin": "^1.4.1"
   }
 }
