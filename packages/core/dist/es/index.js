@@ -1,24 +1,20 @@
-import { m as _ } from "./utils-s2vBiec7.js";
-import { library as o } from "@fortawesome/fontawesome-svg-core";
-import { fas as n } from "@fortawesome/free-solid-svg-icons";
-import { E as t, a as r } from "./Button-OJmZRB1m.js";
-import { a as s } from "./Icon-BbgP-TA1.js";
-import { E as a, a as e } from "./Collapse-eib3Llvu.js";
-import { E as i } from "./Alert-CWMtxCOq.js";
-const m = [t, s, r, a, e, i];
-!function() {
-  {
-    const _2 = "\n____________________________________________\n\n    ___________       ____ ___.___ \n    _   _____/______|    |      |\n    |    __)__  __     |   /   |\n    |        |  | /    |  /|   |\n    /_______  /|__|  |______/ |___|\n            /                     \n_____________________________________________\n              author:EricWXY\n", o2 = "\nbackground: linear-gradient(135deg, orange 60%, cyan);\nbackground-clip: text;\ncolor: transparent;\nfont-size: 16px; \nline-height: 1;\nfont-family: monospace;\nfont-weight: 600;\n";
-    console.info(`%c${_2}`, o2);
-  }
-}(), o.add(n);
-const f = _(m);
+import { m as o } from "./utils-CvN6jvNF.js";
+import { library as s } from "@fortawesome/fontawesome-svg-core";
+import { fas as r } from "@fortawesome/free-solid-svg-icons";
+import { E as m, a as t } from "./Button-BRAYBoUd.js";
+import { a } from "./Icon-CYITiYZ1.js";
+import { E as e, a as f } from "./Collapse-B58nTasG.js";
+import { E as i } from "./Alert-Dr4vJf13.js";
+const p = [m, a, t, e, f, i];
+console.log("[EricUI]:dev mode...");
+s.add(r);
+const l = o(p);
 export {
   i as ErAlert,
-  t as ErButton,
-  r as ErButtonGroup,
-  a as ErCollapse,
-  e as ErCollapseItem,
-  s as ErIcon,
-  f as default
+  m as ErButton,
+  t as ErButtonGroup,
+  e as ErCollapse,
+  f as ErCollapseItem,
+  a as ErIcon,
+  l as default
 };

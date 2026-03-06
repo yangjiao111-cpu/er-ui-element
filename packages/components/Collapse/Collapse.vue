@@ -3,7 +3,6 @@ import type { CollapseProps,CollapseEmits, CollapseItemName } from './types';
 import { provide,ref,watch,watchEffect } from 'vue';
 import {COLLPASE_CTX_KEY} from './constants'
 import { debugWarn } from '@er-ui-element/utils';
-import { debug } from 'console';
 
 const COMP_NAME = `ErCollapse` as const
 
