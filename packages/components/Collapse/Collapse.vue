@@ -3,6 +3,7 @@ import type { CollapseProps,CollapseEmits, CollapseItemName } from './types';
 import { provide,ref,watch,watchEffect } from 'vue';
 import {COLLPASE_CTX_KEY} from './constants'
 import { debugWarn } from '@er-ui-element/utils';
+import { debug } from 'console';
 
 const COMP_NAME = `ErCollapse` as const
 
@@ -12,10 +13,6 @@ defineOptions({
 const props = defineProps<CollapseProps>()
 const emit = defineEmits<CollapseEmits>()
 const activeNames = ref<CollapseItemName[]>(props.modelValue)
-
-if(props.accordion && activeNames.value.length > 1){
-    debugWarn(COMP_NAME,"accordion mode should only have one active item")
-}
 
 function handleItemClick(item:CollapseItemName){
     //todo
@@ -43,7 +40,7 @@ function updateActiveNames(newNames:CollapseItemName[]){
 
 watchEffect(()=>{
     if(props.accordion && activeNames.value.length > 1){
-        console.warn(COMP_NAME,"accordion mode should only have one active item")
+        debugWarn(COMP_NAME,"accordion mode should only have one active item")
     }
 })
 

@@ -7,16 +7,16 @@ class ErUIError extends Error {
     }
 }
 
-export function throwError(scoped: string, msg: string) {
-    throw new ErUIError(`[${scoped}]:${msg}`)
+export function throwError(scope: string, msg: string) {
+    throw new ErUIError(`[${scope}] ${msg}`)
 }
 
 export function debugWarn(error: Error): void;
-export function debugWarn(scoped: string, msg: string): void
+export function debugWarn(scope: string, msg: string): void
 
-export function debugWarn(scoped: string | Error, msg?: string) {
+export function debugWarn(scope: string | Error, msg?: string) {
     if (process.env.NODE_ENV !== "production") {
-        const err = isString(scoped) ? new ErUIError(`[${scoped}]:${msg}]`) : scoped
+        const err = isString(scope) ? new ErUIError(`[${scope}] accordion mode should only have one active item`) : scope
         console.warn(err)
     }
 }
