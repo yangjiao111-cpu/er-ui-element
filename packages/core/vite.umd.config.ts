@@ -5,7 +5,7 @@ import { resolve } from 'path'
 import { compression } from 'vite-plugin-compression2'
 import shell from "shelljs"
 import { delay } from "lodash-es"
-import hooksPlugin from './hooksPlugin'
+import { hooksPlugin } from '@er-ui-element/vite-plugins'
 import terser from '@rollup/plugin-terser'
 
 const TRY_MOVE_STYLES_DELAY = 800 as const;

@@ -4,7 +4,7 @@ import { resolve } from 'path'
 import dts from 'vite-plugin-dts'
 import { readdirSync, readFileSync } from "fs";
 import { filter, map, delay } from 'lodash-es'
-import hooksPlugin from './hooksPlugin'
+import { hooksPlugin } from '@er-ui-element/vite-plugins';
 import shell from 'shelljs'
 import terser from '@rollup/plugin-terser'
 

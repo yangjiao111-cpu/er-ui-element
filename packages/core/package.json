@@ -1,14 +1,18 @@
 {
   "name": "er-ui-element",
-  "version": "1.0.1",
-  "description": "components library by Vue3 + ts",
+  "version": "1.0.0",
+  "description": "Components library by Vue3 + Ts",
   "type": "module",
-  "main": "./dist/umd/index/umd.cjs",
-  "module": "./dist/es/index.js",
-  "types": "./dist/types/core/index.d.ts",
   "files": [
     "dist"
   ],
+  "sideEffects": [
+    "./dist/index.css",
+    "./dist/theme/*.css"
+  ],
+  "main": "./dist/umd/index.umd.cjs",
+  "module": "./dist/es/index.js",
+  "types": "./dist/types/core/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/es/index.js",
@@ -20,30 +24,31 @@
       "require": "./dist/"
     }
   },
-  "sideEffects": [
-    "./dist/index.css"
-  ],
   "scripts": {
     "build": "run-p build-es build-umd",
     "build:watch": "run-p build-es:watch build-umd:watch",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-umd": "vite build --config vite.umd.config.ts",
     "build-es": "vite build --config vite.es.config.ts",
-    "build-umd:watch": "vite build --watch --config vite.umd.config.ts",
+    "build-umd": "vite build --config vite.umd.config.ts",
     "build-es:watch": "vite build --watch --config vite.es.config.ts",
-    "release": "release-it"
+    "build-umd:watch": "vite build --watch --config vite.umd.config.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "EricWXY",
   "license": "ISC",
-  "packageManager": "pnpm@10.30.3",
   "devDependencies": {
-    "@rollup/plugin-terser": "^1.0.0",
-    "terser": "^5.46.0",
-    "vite-plugin-compression2": "^2.5.0",
-    "vite-plugin-dts": "^3.9.1"
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "terser": "^5.31.0",
+    "vite-plugin-compression": "^0.5.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@popperjs/core": "^2.11.8",
+    "async-validator": "^4.2.5"
   },
   "peerDependencies": {
-    "vue": "^3.4.19"
+    "vue": "^3.4.27"
   }
 }
