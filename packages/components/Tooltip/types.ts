@@ -3,7 +3,7 @@ import type { Placement, Options } from '@popperjs/core'
 export interface TooltipProps {
     content?: string;
     //触发方式
-    trigger: "hover" | "click" | "contextmenu";
+    trigger?: "hover" | "click" | "contextmenu";
     //弹出位置
     placement?: Placement;
     //手动控制
