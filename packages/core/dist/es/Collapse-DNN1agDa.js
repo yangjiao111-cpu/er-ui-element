@@ -1,6 +1,6 @@
 import { defineComponent as e, ref as a, watchEffect as l, watch as t, provide as s, openBlock as o, createElementBlock as i, renderSlot as d, inject as n, computed as c, normalizeClass as r, createElementVNode as m, createTextVNode as p, toDisplayString as u, createVNode as v, Transition as h, mergeProps as f, toHandlers as _, unref as b, withCtx as g, withDirectives as y, vShow as C } from "vue";
-import { d as I, _ as E, w as $ } from "./utils-RrMYRzzX.js";
-import { E as x } from "./Icon-BNFlkIJA.js";
+import { d as I, _ as E, w as $ } from "./utils-Dz6Hv9xU.js";
+import { E as x } from "./Icon-BC1WGG_E.js";
 const V = Symbol("collapseContext"), w = { class: "er-collapse" }, k = "ErCollapse", j = E(e({ name: k, __name: "Collapse", props: { modelValue: {}, accordion: { type: Boolean } }, emits: ["update:modelValue", "change"], setup(e2, { emit: n2 }) {
   const c2 = e2, r2 = n2, m2 = a(c2.modelValue);
   function p2(e3) {

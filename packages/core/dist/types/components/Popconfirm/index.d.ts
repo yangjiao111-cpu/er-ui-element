@@ -11,11 +11,9 @@ export declare const ErPopconfirm: {
         };
         confirmButtonText: {
             type: import('vue').PropType<string>;
-            default: string;
         };
         cancelButtonText: {
             type: import('vue').PropType<string>;
-            default: string;
         };
         confirmButtonType: {
             type: import('vue').PropType<import('packages/core').ButtonType>;
@@ -48,8 +46,6 @@ export declare const ErPopconfirm: {
     }, import('vue').PublicProps, {
         icon: string;
         title: string;
-        confirmButtonText: string;
-        cancelButtonText: string;
         confirmButtonType: import('packages/core').ButtonType;
         iconColor: string;
         hideAfter: number;
@@ -73,11 +69,9 @@ export declare const ErPopconfirm: {
         };
         confirmButtonText: {
             type: import('vue').PropType<string>;
-            default: string;
         };
         cancelButtonText: {
             type: import('vue').PropType<string>;
-            default: string;
         };
         confirmButtonType: {
             type: import('vue').PropType<import('packages/core').ButtonType>;
@@ -107,8 +101,6 @@ export declare const ErPopconfirm: {
     }>, {}, {}, {}, {}, {
         icon: string;
         title: string;
-        confirmButtonText: string;
-        cancelButtonText: string;
         confirmButtonType: import('packages/core').ButtonType;
         iconColor: string;
         hideAfter: number;
@@ -129,11 +121,9 @@ export declare const ErPopconfirm: {
     };
     confirmButtonText: {
         type: import('vue').PropType<string>;
-        default: string;
     };
     cancelButtonText: {
         type: import('vue').PropType<string>;
-        default: string;
     };
     confirmButtonType: {
         type: import('vue').PropType<import('packages/core').ButtonType>;
@@ -166,8 +156,6 @@ export declare const ErPopconfirm: {
 }, string, {
     icon: string;
     title: string;
-    confirmButtonText: string;
-    cancelButtonText: string;
     confirmButtonType: import('packages/core').ButtonType;
     iconColor: string;
     hideAfter: number;

@@ -71,7 +71,7 @@ export declare const ErIcon: {
             type: import('vue').PropType<boolean>;
         };
         type: {
-            type: import('vue').PropType<"info" | "success" | "warning" | "danger" | "primary">;
+            type: import('vue').PropType<"primary" | "success" | "warning" | "danger" | "info">;
         };
         color: {
             type: import('vue').PropType<string>;
@@ -155,7 +155,7 @@ export declare const ErIcon: {
             type: import('vue').PropType<boolean>;
         };
         type: {
-            type: import('vue').PropType<"info" | "success" | "warning" | "danger" | "primary">;
+            type: import('vue').PropType<"primary" | "success" | "warning" | "danger" | "info">;
         };
         color: {
             type: import('vue').PropType<string>;
@@ -236,7 +236,7 @@ export declare const ErIcon: {
         type: import('vue').PropType<boolean>;
     };
     type: {
-        type: import('vue').PropType<"info" | "success" | "warning" | "danger" | "primary">;
+        type: import('vue').PropType<"primary" | "success" | "warning" | "danger" | "info">;
     };
     color: {
         type: import('vue').PropType<string>;

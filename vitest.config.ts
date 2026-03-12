@@ -9,7 +9,7 @@ export default defineConfig({
     define: {
         PROD: JSON.stringify(false),
         DEV: JSON.stringify(false),
-        test: JSON.stringify(true)
+        TEST: JSON.stringify(true)
     },
     test: {
         globals: true,

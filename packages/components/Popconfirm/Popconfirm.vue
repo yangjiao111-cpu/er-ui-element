@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import {ref,computed} from 'vue'
-import ErTooltip from '../Tooltip/Tooltip.vue';
+import ErTooltip from '../Tooltip/Tooltip.vue'
 import ErButton from '../Button/Button.vue'
 import {addUnit} from '@er-ui-element/utils'
-import type { PopconfirmProps,PopconfirmEmits } from './types';
-import type { TooltipInstance } from '../Tooltip';
+import {useLocale} from '@er-ui-element/hooks'
+import type { PopconfirmProps,PopconfirmEmits } from './types'
+import type { TooltipInstance } from '../Tooltip'
 
 defineOptions({
     name:'ErPopconfirm'
@@ -15,8 +16,6 @@ const props = withDefaults(defineProps<PopconfirmProps>(),{
     confirmButtonType: "primary",
     icon: "question-circle",
     iconColor: "#f90",
-    confirmButtonText:'确认',
-    cancelButtonText:'取消',
     hideAfter: 200,
     width: 150,
 })
@@ -24,6 +23,8 @@ const props = withDefaults(defineProps<PopconfirmProps>(),{
 const tooltipRef = ref<TooltipInstance>()
 const style = computed(()=>({width:addUnit(props.width)}))
 const emits = defineEmits<PopconfirmEmits>()
+
+const {t} = useLocale()
 
 function hidePopper(){
     tooltipRef.value?.hide()
@@ -56,7 +57,7 @@ function cancel(e:MouseEvent){
             :type="cancelButtonType"
             @click="cancel"
           >
-            {{ cancelButtonText }}
+            {{ cancelButtonText || t('popconfirm.cancelButtonText')}}
           </er-button>
           <er-button
             size="small"
@@ -64,7 +65,7 @@ function cancel(e:MouseEvent){
             :type="confirmButtonType"
             @click="confirm"
           >
-            {{ confirmButtonText }}
+            {{ confirmButtonText || t('popconfirm.confirmButtonText') }}
           </er-button>
         </div>
       </div>

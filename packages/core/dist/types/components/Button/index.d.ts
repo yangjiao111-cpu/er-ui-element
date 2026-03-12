@@ -1,10 +1,10 @@
 export declare const ErButton: {
     new (...args: any[]): import('vue').CreateComponentPublicInstanceWithMixins<Readonly<import('vue').ExtractPropTypes<{
+        icon: {
+            type: import('vue').PropType<string>;
+        };
         size: {
             type: import('vue').PropType<import('packages/core').ButtonSize>;
-        };
-        icon: {
-            type: import('vue').PropType<"string">;
         };
         type: {
             type: import('vue').PropType<import('packages/core').ButtonType>;
@@ -68,11 +68,11 @@ export declare const ErButton: {
         M: {};
         Defaults: {};
     }, Readonly<import('vue').ExtractPropTypes<{
+        icon: {
+            type: import('vue').PropType<string>;
+        };
         size: {
             type: import('vue').PropType<import('packages/core').ButtonSize>;
-        };
-        icon: {
-            type: import('vue').PropType<"string">;
         };
         type: {
             type: import('vue').PropType<import('packages/core').ButtonType>;
@@ -131,11 +131,11 @@ export declare const ErButton: {
     __isTeleport?: never;
     __isSuspense?: never;
 } & import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
+    icon: {
+        type: import('vue').PropType<string>;
+    };
     size: {
         type: import('vue').PropType<import('packages/core').ButtonSize>;
-    };
-    icon: {
-        type: import('vue').PropType<"string">;
     };
     type: {
         type: import('vue').PropType<import('packages/core').ButtonType>;

@@ -8,7 +8,7 @@ export declare const ErTooltip: {
             type: import('vue').PropType<boolean>;
         };
         virtualRef: {
-            type: import('vue').PropType<void | HTMLElement | import('packages/core').ButtonInstance>;
+            type: import('vue').PropType<void | import('packages/core').ButtonInstance | HTMLElement>;
         };
         virtualTriggering: {
             type: import('vue').PropType<boolean>;
@@ -18,7 +18,6 @@ export declare const ErTooltip: {
         };
         trigger: {
             type: import('vue').PropType<"click" | "hover" | "contextmenu">;
-            required: true;
             default: string;
         };
         placement: {
@@ -70,7 +69,7 @@ export declare const ErTooltip: {
             type: import('vue').PropType<boolean>;
         };
         virtualRef: {
-            type: import('vue').PropType<void | HTMLElement | import('packages/core').ButtonInstance>;
+            type: import('vue').PropType<void | import('packages/core').ButtonInstance | HTMLElement>;
         };
         virtualTriggering: {
             type: import('vue').PropType<boolean>;
@@ -80,7 +79,6 @@ export declare const ErTooltip: {
         };
         trigger: {
             type: import('vue').PropType<"click" | "hover" | "contextmenu">;
-            required: true;
             default: string;
         };
         placement: {
@@ -126,7 +124,7 @@ export declare const ErTooltip: {
         type: import('vue').PropType<boolean>;
     };
     virtualRef: {
-        type: import('vue').PropType<void | HTMLElement | import('packages/core').ButtonInstance>;
+        type: import('vue').PropType<void | import('packages/core').ButtonInstance | HTMLElement>;
     };
     virtualTriggering: {
         type: import('vue').PropType<boolean>;
@@ -136,7 +134,6 @@ export declare const ErTooltip: {
     };
     trigger: {
         type: import('vue').PropType<"click" | "hover" | "contextmenu">;
-        required: true;
         default: string;
     };
     placement: {

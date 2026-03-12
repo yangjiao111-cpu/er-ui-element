@@ -1,3 +1,4 @@
+import { ErConfigProvider } from "@er-ui-element/components/ConfigProvider";
 import {
     ErButton,
     ErIcon,
@@ -24,4 +25,5 @@ export default [
     ErPopconfirm,
     ErDropdown,
     ErDropdownItem,
+    ErConfigProvider
 ] as Plugin[];

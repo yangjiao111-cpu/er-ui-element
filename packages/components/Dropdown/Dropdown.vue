@@ -13,6 +13,7 @@ import type {
     DropdownContext,
     DropdownItemProps
 } from './types';
+import {useDisabledStyle} from '@er-ui-element/hooks'
 
 import { DROPDOWN_CTX_KEY } from './constants';
 
@@ -38,6 +39,8 @@ function handleItemClick(e:DropdownItemProps){
     props.hideOnClick && tooltipRef.value?.hide()
     !isNil(e.command) && emits('command',e.command)
 }
+
+!TEST && useDisabledStyle()
 
 provide<DropdownContext>(DROPDOWN_CTX_KEY,{
     handleItemClick,
