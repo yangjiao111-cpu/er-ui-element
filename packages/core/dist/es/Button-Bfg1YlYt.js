@@ -1,7 +1,7 @@
 import { defineComponent as e, useSlots as o, inject as t, ref as a, computed as l, openBlock as i, createBlock as s, resolveDynamicComponent as n, unref as d, normalizeClass as u, withCtx as r, renderSlot as p, createVNode as c, normalizeStyle as y, createCommentVNode as b, provide as f, reactive as v, toRef as g, createElementBlock as m } from "vue";
-import { E as _ } from "./Icon-BC1WGG_E.js";
-import { t as B } from "./vendor-7Dpq5lhG.js";
-import { _ as z, w as T } from "./utils-Dz6Hv9xU.js";
+import { E as _ } from "./Icon-DejoFiph.js";
+import { t as B } from "./vendor-B3CbtOf3.js";
+import { _ as z, w as T } from "./utils-BPs9OFM8.js";
 const k = Symbol("BUTTON_GROUP_CTX_KEY"), E = z(e({ name: "ErButton", __name: "Button", props: { tag: { default: "button" }, type: {}, size: {}, nativeType: { default: "button" }, disabled: { type: Boolean }, loading: { type: Boolean }, icon: {}, circle: { type: Boolean }, plain: { type: Boolean }, round: { type: Boolean }, loadingIcon: {}, autofocus: { type: Boolean }, useThrottle: { type: Boolean, default: true }, throttleDuration: { default: 500 } }, emits: ["click"], setup(e2, { expose: f2, emit: v2 }) {
   const g2 = e2, m2 = v2, z2 = o(), T2 = t(k, void 0), E2 = a(), I2 = l(() => (T2 == null ? void 0 : T2.size) ?? g2.size ?? ""), $2 = l(() => (T2 == null ? void 0 : T2.type) ?? g2.type ?? ""), h2 = l(() => (T2 == null ? void 0 : T2.disabled) ?? g2.disabled ?? ""), x2 = l(() => {
     z2.default;

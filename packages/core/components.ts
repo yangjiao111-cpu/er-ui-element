@@ -10,6 +10,7 @@ import {
     ErPopconfirm,
     ErDropdown,
     ErDropdownItem,
+    ErMessage
 
 } from "../components";
 import type { Plugin } from 'vue';
@@ -25,5 +26,6 @@ export default [
     ErPopconfirm,
     ErDropdown,
     ErDropdownItem,
-    ErConfigProvider
+    ErConfigProvider,
+    ErMessage
 ] as Plugin[];

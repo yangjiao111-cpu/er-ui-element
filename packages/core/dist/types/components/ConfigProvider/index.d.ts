@@ -31,6 +31,12 @@ export declare const ErConfigProvider: {
     extendsI18Msg: {
         type: import('vue').PropType<import('packages/locale').TranslatePair>;
     };
-}>> & Readonly<{}>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, {}, {}, string, {}, import('vue').GlobalComponents, import('vue').GlobalDirectives, string, import('vue').ComponentProvideOptions> & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & import('vue').Plugin;
+}>> & Readonly<{}>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, {}, {}, string, {}, import('vue').GlobalComponents, import('vue').GlobalDirectives, string, import('vue').ComponentProvideOptions> & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & (new () => {
+    $slots: {
+        default?(_: {
+            config: Partial<import('packages/core').ConfigProviderProps> | undefined;
+        }): any;
+    };
+}) & import('vue').Plugin;
 export * from './hooks';
 export * from './types';

@@ -1,13 +1,6 @@
 import type { App, Plugin } from 'vue';
-import { each } from "lodash-es";
 
 type SFCWithInstall<T> = T & Plugin;
-
-export function makeInstaller(components: Plugin[]) {
-    const installer = (app: App) => each(components, c => app.use(c));
-
-    return installer as Plugin;
-}
 
 export const withInstall = <T>(component: T) => {
     (component as SFCWithInstall<T>).install = (app: App) => {
@@ -17,3 +10,10 @@ export const withInstall = <T>(component: T) => {
 
     return component as SFCWithInstall<T>;
 }
+
+export const withInstallFunction = <T>(fn: T, name: string) => {
+    (fn as SFCWithInstall<T>).install = (app: App) => {
+        app.config.globalProperties[name] = fn;
+    };
+    return fn as SFCWithInstall<T>;
+};
