@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type {DropdownItemProps} from '@er-ui-element/components'
+import { ErNotification } from 'er-ui-element'
 import { ErMessage } from 'er-ui-element'
 const confirm = () => {
   console.log('确认')
@@ -18,6 +19,15 @@ const openSuccess = () => {
     type:'success',
     showClose:true,
     message:'this is a message'
+  })
+}
+
+const openNotification = () => {
+  ErNotification({
+    title:'Prompt',
+    message:'this is a message',
+    duration:0,
+    position:'bottom-right'
   })
 }
 </script>
@@ -41,6 +51,7 @@ const openSuccess = () => {
     this is dropdown
   </er-dropdown>
   <er-button @click="openSuccess">click to get message of success</er-button>
+  <er-button @click="openNotification">click to open notification</er-button>
 </template>
 
 <style scoped>
