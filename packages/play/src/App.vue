@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type {DropdownItemProps} from '@er-ui-element/components'
+import {ErLoading, type DropdownItemProps} from '@er-ui-element/components'
 import { ErNotification } from 'er-ui-element'
 import { ErMessage } from 'er-ui-element'
 import {ErMessageBox} from 'er-ui-element'
@@ -41,6 +41,26 @@ function openConfirm(){
     ErMessage.warning('fdsfdsf')
   })
 }
+function openLoading(){
+  const _loading = ErLoading.service({
+    lock:true,
+    text:'加载中...',
+    fullscreen:true
+  });
+  setTimeout(()=>{
+    _loading.close();
+  },2000);
+}
+
+function openLoading2(){
+  const _loading = ErLoading.directive({
+    lock:true,
+    text:'加载中...'
+  });
+  setTimeout(()=>{
+    _loading.close();
+  },2000);
+}
 </script>
 
 <template>
@@ -65,6 +85,8 @@ function openConfirm(){
   <er-button @click="openNotification">click to open notification</er-button>
   <er-button @click="openConfirm">测试MessageBox</er-button>
   <ErInput></ErInput>
+  <er-button @click="openLoading">click to open _loading</er-button>
+  <er-button v-loading>用指令方式打开loading</er-button>
 </template>
 
 <style scoped>
