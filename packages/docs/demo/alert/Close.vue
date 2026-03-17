@@ -1,9 +1,8 @@
 <script setup>
-// import { ErMessage } from "er-ui-element";
+import { ErMessage } from "er-ui-element";
 
 function handleClose() {
-  // ErMessage.info("close callback");
-  console.log('close callback')
+  ErMessage.info("close callback");
 }
 </script>
 <template>

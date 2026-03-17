@@ -10,7 +10,7 @@ next:
 
 
 ```bash
-npm i @eric-ui --save
+npm i @er-ui-element --save
 ```
 
 ## 开始使用
@@ -20,9 +20,9 @@ npm i @eric-ui --save
 
 ```js
 // 引入所有组件
-import EricUI from 'eric-ui'
+import EricUI from 'er-ui-element'
 // 引入样式
-import 'eric-ui/dist/style.css'
+import 'er-ui-element/dist/style.css'
 
 import App from './App.vue'
 // 全局使用
@@ -37,7 +37,7 @@ createApp(App).use(ErElement).mount('#app')
 
 **单个导入**
 
-Eric-UI 提供了基于 ES Module 的开箱即用的 Tree Shaking 功能。
+er-ui-element 提供了基于 ES Module 的开箱即用的 Tree Shaking 功能。
 
 
 ```vue

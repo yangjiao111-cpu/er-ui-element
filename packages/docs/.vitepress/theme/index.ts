@@ -1,6 +1,6 @@
 import DefaultTheme from "vitepress/theme";
 import { type App } from "vue";
-import ErUI from "er-ui-element";
+import EricUI, { zhCn } from "er-ui-element";
 import { ElementPlusContainer } from "@vitepress-demo-preview/component";
 
 import "@vitepress-demo-preview/component/dist/style.css";
@@ -10,6 +10,6 @@ export default {
     ...DefaultTheme,
     enhanceApp({ app }: { app: App }) {
         app.component("demo-preview", ElementPlusContainer);
-        app.use(ErUI);
+        app.use(EricUI, { locale: zhCn });
     },
 };

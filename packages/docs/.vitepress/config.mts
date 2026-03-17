@@ -1,24 +1,23 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 import {
   containerPreview,
   componentPreview,
 } from "@vitepress-demo-preview/plugin";
 
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Er-UI-Element",
-  description: "高 仿 ElementPlus 组 件 库",
+  description: "基于Vue3 高仿 element-ui 组件库",
+  appearance: false, // 关闭 darkMode @todo 深色模式完成后打开
   base: "/er-ui-element/",
-  appearance: false,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '开始使用', link: '/get-started' },
-      { text: '组件', link: '/components/button' }
+      { text: "开始使用", link: "/get-started" },
+      { text: "组件", link: "/components/button" },
     ],
     search: {
-      provider: "local"
+      provider: "local",
     },
     sidebar: [
       {
@@ -32,14 +31,32 @@ export default defineConfig({
         items: [
           { text: "Button 按钮", link: "components/button" },
           { text: "Collapse 折叠面板", link: "components/collapse" },
-
+          { text: "Dropdown 下拉菜单", link: "components/dropdown" },
         ],
+      },
+      {
+        text: "反馈组件",
+        collapsed: false,
+        items: [
+          { text: "Alert 提示", link: "components/alert" },
+          { text: "Loading 加载", link: "components/loading" },
+          { text: "Message 消息提示", link: "components/message" },
+          { text: "MessageBox 消息弹出框", link: "components/messagebox" },
+          { text: "Notification 通知", link: "components/notification" },
+          { text: "Popconfirm 气泡确认框", link: "components/popconfirm" },
+          { text: "Tooltip 文字提示", link: "components/tooltip" },
+        ],
+      },
+      {
+        text: "表单组件",
+        collapsed: false,
+        items: [{ text: "Form 表单", link: "components/form" }],
       },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/yangjiao111-cpu/er-ui-element' }
-    ]
+      { icon: "github", link: "https://github.com/yangjiao111-cpu/er-ui-element" },
+    ],
   },
   markdown: {
     config(md) {
@@ -47,4 +64,4 @@ export default defineConfig({
       md.use(componentPreview);
     },
   },
-})
+});

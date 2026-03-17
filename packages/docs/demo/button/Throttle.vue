@@ -1,9 +1,7 @@
 <script setup>
-// import { ErMessage } from "er-ui-element";
-
-function handleClose() {
-  // ErMessage.info("close callback");
-  console.log('btn-click')
+import { ErMessage } from "er-ui-element";
+function handleBtnClick() {
+  ErMessage.info("btn click");
 }
 </script>
 
